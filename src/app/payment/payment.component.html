@@ -1,0 +1,87 @@
+<div class="container-fluid">
+<div class="card text-center">
+  <div class="card-header">
+    Payment Method
+  </div>
+  <div class="card-body">
+  <div class="btn-group" role="group" aria-label="Basic example">
+ 
+  <button onclick="window.location.href='#card'" type="button" class="btn btn-secondary">Card Payment</button>
+  <button onclick="window.location.href= '#net'" type="button" class="btn btn-secondary">Net Banking</button>
+  <button onclick="window.location.href= '#upi'" type="button" class="btn btn-secondary">UPI</button>
+</div>
+  </div>
+ <div id="card" style="padding: 50px ; padding-top: 10px;"><form>
+<div align="center" class="card bg-light mb-3" >
+  <div class="card-header">
+    Payment Details
+  </div>
+  <div class="card-body">
+  </div>
+  <div class="form-group">
+    <label for="pnr">Card Number</label>
+    <input type="tel" class="form-control" id="cn" placeholder="valid card number" size="10">
+    </div>
+  <div class="form-group">
+    <label for="mob">Expiration Date</label>
+    <input type="date" class="form-control" id="date" >
+  </div>
+    <div><label for="cvc">Enter CV Code:</label>
+    <input type="tel" class="form-control" id="cvc" placeholder="CVC" size="3">
+    </div>
+
+    <div><label for="pnr">Card Owner</label>
+    <input type="text" class="form-control" id="co" placeholder="Card Owner Name" >
+    </div></div>
+<button type="submit" class="btn btn-primary">Process Payment</button>
+   
+ 
+ 
+</form>
+ 
+ </div>
+ <div id="net" style="padding: 50px ; padding-top: 10px;">
+<div class="card text-center">
+  <div class="card-header">
+    Net Banking
+  </div> <div class="card-body">
+  <form><div class="form-group">
+ <label for="preference">Choose your bank:</label>
+  <select class="form-control"id="pref">
+    <option>SBI</option>
+    <option>HDFC</option>
+    <option>IOB</option>
+    <option>Federal</option>
+    <option>Bank of Baroda</option>
+  </select>
+</div>
+<div class="form-group" >
+      <label for="Name">Current/Saving Account Number:</label>
+      <input type="text" class="form-control" id="acct" placeholder="Enter account number.." name="acct">
+    </div>
+<div class="form-group">
+      <label for="age">ATM cum Debit Card Number:</label>
+      <input type="number" class="form-control" id="atm" placeholder="Enter atm card number.." name="atm">
+    </div>
+    <button type="submit" class="btn btn-primary">Process Payment</button>
+  </form>
+</div></div></div>
+<div id="upi" style="padding: 50px ; padding-top: 10px;">
+<div class="card">
+  <div class="card-header">
+    UPI Payment
+  </div>
+  <div class="card-body">
+    <form><div class="form-group" >
+      <label for="UPIMob">Mobile number:</label>
+      <input type="tel" class="form-control" id="upimob" placeholder="Enter mobile number.." name="mobupi">
+    </div>
+<div class="form-group">
+      <label for="UpiId">Upi ID:</label>
+      <input type="tel" class="form-control" id="upiid" placeholder="Enter UPI ID.." name="upi">
+    </div>
+<button type="submit" class="btn btn-primary">Process Payment</button></form>
+
+  </div>
+</div></div>
+</div>
